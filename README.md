@@ -38,7 +38,7 @@
 
 ### Links
 
-- Solution URL: [solution URL](https://github.com/M-lakshan/FM_Challenge-NFT-Preview-Card-Component-Main)
+- Solution URL: [solution URL](https://www.frontendmentor.io/solutions/simple-nft-preview-card-component-using-only-html-and-css-gxSaNPGZiA)
 - Live Site URL: [live site URL](https://m-lakshan.github.io/FM_Challenge-NFT-Preview-Card-Component-Main/)
 
 ## My process
