@@ -38,8 +38,8 @@
 
 ### Links
 
-- Solution URL: [solution URL](https://www.frontendmentor.io/solutions/simple-nft-preview-card-component-using-only-html-and-css-gxSaNPGZiA)
-- Live Site URL: [live site URL](https://m-lakshan.github.io/FM_Challenge-NFT-Preview-Card-Component-Main/)
+- Solution URL: [Frontend Mentor Solution Page](https://www.frontendmentor.io/solutions/simple-nft-preview-card-component-using-only-html-and-css-gxSaNPGZiA)
+- Live Site URL: [GitHub Pages](https://m-lakshan.github.io/FM_Challenge-NFT-Preview-Card-Component-Main/)
 
 ## My process
 
