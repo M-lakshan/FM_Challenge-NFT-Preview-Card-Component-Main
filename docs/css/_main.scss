@@ -1,0 +1,245 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background: $Very_Dark_Blue_mainBG;
+    height: 100vh;
+    width: 100%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    height: 545px;
+    width: 325px;
+    background: $Very_Dark_Blue_cardBG;
+    border-radius: 15px;
+    padding: 25px;
+    font-family: 'Outfit', sans-serif;
+
+    .main_img_container {
+        position: relative;
+        height: 275px;
+        width: 275px;
+        border-radius: 10px;
+        margin: 2px 0px 0px;
+        transition: 500ms ease;
+        overflow: hidden;
+
+        .main_img {
+            position: absolute;
+            height: 275px;
+            width: 275px;
+        }
+
+        .main_img_alt {
+            display: none;
+            transition: 500ms ease;
+        }
+    
+        /* //when using the ordinary overlaying
+        .overlay {
+            display: none;
+            transition: 500ms ease;
+        }
+        */
+
+        &:hover {
+            cursor: pointer;
+            transition: 300ms ease;
+            background: $Cyan_overlay !important;
+            // if using background property here, remove the background: $Cyan_overlay; written below
+            // then use 'mix-blend-mode: screen;' for .main_img while hovering
+
+            .main_img { // if using background property above, remove this block
+                mix-blend-mode: screen;
+            }
+            
+            /* //when using the ordinary overlaying
+            .overlay {
+                position: absolute;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transition: 500ms ease;
+                height: 102%;
+                width: 100%;
+                background: $Cyan_overlay !important;
+                // if using this style block remove the background: $Cyan_overlay; written above
+
+                .main_img_alt {
+                    transition: 500ms ease;
+                    height: auto;
+                    width: 50px;
+                }
+            }
+            */
+
+            .main_img_alt {
+                display: inline-block;
+                position: absolute;
+                transition: 500ms ease;
+                height: auto;
+                width: 50px;
+                top: 110px;
+                left: 112px;
+            }
+        }
+    }
+
+    h2 {
+        margin: 27px 0px 3px;
+        color: $White;
+        font-weight: 500;
+        font-size: 22px;
+        transition: 300ms ease;
+        
+        &:hover {
+            cursor: pointer;
+            transition: 300ms ease;
+            color: $Cyan !important;
+        }
+    }
+
+    .desc {
+        color: $Soft_Blue;
+        font-weight: 200;
+        margin: 8px 0px 0px;
+        line-height: 25px;
+    }
+
+    .desc_alts {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin: 18px 0px 15px;
+        height: 18px;
+        width: 100%;
+
+        p {
+            display: flex;
+            align-items: center;
+        }
+
+        .desc_alt_i {
+            color: $Cyan;
+            font-weight: 500;
+            font-size: 15px;
+            font-stretch: semi-condensed;
+
+            span {
+                margin-left: 8px;
+            }
+        }
+
+        .desc_alt_ii {
+            color: $Soft_Blue;
+            font-weight: 400;
+            font-size: 16px;
+
+            span {
+                margin-left: 8px;
+            }
+        }
+    }
+
+    hr {
+        width: 100% !important;
+        height: 1px !important;
+        color: $Very_Dark_Blue_line;
+    }
+
+    .creation {
+        display: flex;
+        align-items: center;
+        padding: 15px 0px 0px;
+        color: $Soft_Blue;
+
+        .avatar {
+            height: 35px;
+            width: 35px;
+            border: 1px solid $White;
+            border-radius: 50%;
+            margin-right: 15px;
+        }
+
+        span {
+            margin-left: 5px;
+            color: $White;
+            transition: 300ms ease;
+
+            &:hover {
+                cursor: pointer;
+                transition: 300ms ease;
+                color: $Cyan !important;
+            }
+        }
+
+    }
+
+    @media screen and (min-width: 1440px) {
+        height: 548px !important;
+        transition: 100ms ease;
+        transform: scale(1.09);
+
+        .main_img_container {
+            margin-top: -4px !important;
+            border-radius: 8px !important;
+        }
+
+        h2 {
+            margin: 22px 0px -1px !important;
+            padding-bottom: -1px !important;
+            font-weight: 500 !important;
+            font-size: 21px !important;
+        }
+
+        .desc {
+            margin: 15px 0px -6px !important;
+            line-height: 24px !important;
+            font-size: 17px;
+        }
+
+        .desc_alts {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-end;
+            justify-content: space-between;
+            margin: 20px 0px 10px !important;
+            height: 28px !important;
+            padding-bottom: 0%;
+
+            p {
+                margin-top: 10px !important;
+            }
+        }
+
+        hr {
+            margin-top: 10px !important;
+            margin-bottom: -9px !important;
+        }
+
+        .creation {
+            display: flex;
+            align-items: center;
+            padding: 23px 0px 2px !important;
+            font-size: 15px !important;
+
+            .avatar {
+                height: 31px !important;
+                width: 31px !important;
+            }
+        }
+    }
+}

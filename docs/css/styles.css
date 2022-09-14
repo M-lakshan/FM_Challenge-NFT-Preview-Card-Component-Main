@@ -1,0 +1,365 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700&display=swap");
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  position: absolute;
+  bottom: 5px;
+}
+
+@media screen and (min-width: 1440px) {
+  footer {
+    bottom: 20px;
+  }
+}
+
+footer .attribution {
+  text-align: center;
+  padding-top: 24px;
+  opacity: 0%;
+  -webkit-transition: 250ms ease;
+  transition: 250ms ease;
+  margin-top: -45px;
+  color: white;
+}
+
+footer .attribution:hover {
+  cursor: pointer;
+  -webkit-transition: 250ms ease;
+  transition: 250ms ease;
+  font-size: 12px;
+  padding-top: 0px;
+  height: 24px;
+  opacity: 100%;
+}
+
+footer .attribution a {
+  color: #00fff7;
+}
+
+@media screen and (min-width: 1080px) {
+  footer .attribution {
+    text-align: center;
+    padding-top: 35px;
+    height: 20px;
+    opacity: 0%;
+    -webkit-transition: 250ms ease;
+    transition: 250ms ease;
+  }
+  footer .attribution:hover {
+    cursor: pointer;
+    -webkit-transition: 250ms ease;
+    transition: 250ms ease;
+    font-size: 12px;
+    margin-bottom: 5px;
+    opacity: 100%;
+  }
+  footer .attribution a {
+    color: #00fff7;
+  }
+}
+
+*, *::after, *::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  background: #0d192b;
+  height: 100vh;
+  width: 100%;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 545px;
+  width: 325px;
+  background: #14253d;
+  border-radius: 15px;
+  padding: 25px;
+  font-family: 'Outfit', sans-serif;
+}
+
+main .main_img_container {
+  position: relative;
+  height: 275px;
+  width: 275px;
+  border-radius: 10px;
+  margin: 2px 0px 0px;
+  -webkit-transition: 500ms ease;
+  transition: 500ms ease;
+  overflow: hidden;
+  /* //when using the ordinary overlaying
+        .overlay {
+            display: none;
+            transition: 500ms ease;
+        }
+        */
+}
+
+main .main_img_container .main_img {
+  position: absolute;
+  height: 275px;
+  width: 275px;
+}
+
+main .main_img_container .main_img_alt {
+  display: none;
+  -webkit-transition: 500ms ease;
+  transition: 500ms ease;
+}
+
+main .main_img_container:hover {
+  cursor: pointer;
+  -webkit-transition: 300ms ease;
+  transition: 300ms ease;
+  background: rgba(0, 255, 247, 0.4) !important;
+  /* //when using the ordinary overlaying
+            .overlay {
+                position: absolute;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transition: 500ms ease;
+                height: 102%;
+                width: 100%;
+                background: $Cyan_overlay !important;
+                // if using this style block remove the background: $Cyan_overlay; written above
+
+                .main_img_alt {
+                    transition: 500ms ease;
+                    height: auto;
+                    width: 50px;
+                }
+            }
+            */
+}
+
+main .main_img_container:hover .main_img {
+  mix-blend-mode: screen;
+}
+
+main .main_img_container:hover .main_img_alt {
+  display: inline-block;
+  position: absolute;
+  -webkit-transition: 500ms ease;
+  transition: 500ms ease;
+  height: auto;
+  width: 50px;
+  top: 110px;
+  left: 112px;
+}
+
+main h2 {
+  margin: 27px 0px 3px;
+  color: white;
+  font-weight: 500;
+  font-size: 22px;
+  -webkit-transition: 300ms ease;
+  transition: 300ms ease;
+}
+
+main h2:hover {
+  cursor: pointer;
+  -webkit-transition: 300ms ease;
+  transition: 300ms ease;
+  color: #00fff7 !important;
+}
+
+main .desc {
+  color: #8bacda;
+  font-weight: 200;
+  margin: 8px 0px 0px;
+  line-height: 25px;
+}
+
+main .desc_alts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 18px 0px 15px;
+  height: 18px;
+  width: 100%;
+}
+
+main .desc_alts p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .desc_alts .desc_alt_i {
+  color: #00fff7;
+  font-weight: 500;
+  font-size: 15px;
+  font-stretch: semi-condensed;
+}
+
+main .desc_alts .desc_alt_i span {
+  margin-left: 8px;
+}
+
+main .desc_alts .desc_alt_ii {
+  color: #8bacda;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+main .desc_alts .desc_alt_ii span {
+  margin-left: 8px;
+}
+
+main hr {
+  width: 100% !important;
+  height: 1px !important;
+  color: #2f415b;
+}
+
+main .creation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px 0px 0px;
+  color: #8bacda;
+}
+
+main .creation .avatar {
+  height: 35px;
+  width: 35px;
+  border: 1px solid white;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+main .creation span {
+  margin-left: 5px;
+  color: white;
+  -webkit-transition: 300ms ease;
+  transition: 300ms ease;
+}
+
+main .creation span:hover {
+  cursor: pointer;
+  -webkit-transition: 300ms ease;
+  transition: 300ms ease;
+  color: #00fff7 !important;
+}
+
+@media screen and (min-width: 1440px) {
+  main {
+    height: 548px !important;
+    -webkit-transition: 100ms ease;
+    transition: 100ms ease;
+    -webkit-transform: scale(1.09);
+            transform: scale(1.09);
+  }
+  main .main_img_container {
+    margin-top: -4px !important;
+    border-radius: 8px !important;
+  }
+  main h2 {
+    margin: 22px 0px -1px !important;
+    padding-bottom: -1px !important;
+    font-weight: 500 !important;
+    font-size: 21px !important;
+  }
+  main .desc {
+    margin: 15px 0px -6px !important;
+    line-height: 24px !important;
+    font-size: 17px;
+  }
+  main .desc_alts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 20px 0px 10px !important;
+    height: 28px !important;
+    padding-bottom: 0%;
+  }
+  main .desc_alts p {
+    margin-top: 10px !important;
+  }
+  main hr {
+    margin-top: 10px !important;
+    margin-bottom: -9px !important;
+  }
+  main .creation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 23px 0px 2px !important;
+    font-size: 15px !important;
+  }
+  main .creation .avatar {
+    height: 31px !important;
+    width: 31px !important;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
